@@ -1,0 +1,79 @@
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: unless-stopped
+    command:
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --entrypoints.web.http.redirections.entrypoint.to=websecure
+      - --entrypoints.web.http.redirections.entrypoint.scheme=https
+      - --certificatesresolvers.letsencrypt.acme.tlschallenge=true
+      - --certificatesresolvers.letsencrypt.acme.email=${ACME_EMAIL:-admin@example.com}
+      - --certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json
+      - --api.dashboard=true
+      - --api.insecure=false
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - traefik-letsencrypt:/letsencrypt
+    networks:
+      - tb-amr-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.${DOMAIN:-localhost}`)"
+      - "traefik.http.routers.traefik.entrypoints=websecure"
+      - "traefik.http.routers.traefik.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.traefik.service=api@internal"
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: tb-amr-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-tb_resistance_hub}
+      POSTGRES_USER: ${POSTGRES_USER:-tb_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secure_password}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - tb-amr-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tb_user}"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # TB-AMR Application
+  tb-amr-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tb-amr-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-tb_user}:${POSTGRES_PASSWORD:-secure_password}@postgres:5432/${POSTGRES_DB:-tb_resistance_hub}
+    networks:
+      - tb-amr-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.tb-amr.rule=Host(`${DOMAIN:-localhost}`)"
+      - "traefik.http.routers.tb-amr.entrypoints=websecure"
+      - "traefik.http.routers.tb-amr.tls.certresolver=letsencrypt"
+      - "traefik.http.services.tb-amr.loadbalancer.server.port=8501"
+
+networks:
+  tb-amr-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  traefik-letsencrypt:
