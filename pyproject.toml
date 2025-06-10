@@ -2,6 +2,26 @@
 name = "tb-amr"
 version = "0.1.0"
 description = "TB Antimicrobial Resistance Analysis and Decision Support System"
+authors = [
+    {name = "TB-AMR Project Contributors"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+homepage = "https://gitlab.com/statwig-public/tb-amr"
+repository = "https://gitlab.com/statwig-public/tb-amr"
+keywords = ["tuberculosis", "antimicrobial-resistance", "healthcare", "clinical-decision-support"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 requires-python = ">=3.11"
 dependencies = [
     "altair>=5.5.0",
