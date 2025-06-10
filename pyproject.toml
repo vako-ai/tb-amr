@@ -1,7 +1,7 @@
 [project]
-name = "repl-nix-workspace"
+name = "tb-amr"
 version = "0.1.0"
-description = "Add your description here"
+description = "TB Antimicrobial Resistance Analysis and Decision Support System"
 requires-python = ">=3.11"
 dependencies = [
     "altair>=5.5.0",
