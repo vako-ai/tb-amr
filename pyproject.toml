@@ -5,7 +5,7 @@ description = "TB Antimicrobial Resistance Analysis and Decision Support System"
 authors = [
     {name = "TB-AMR Project Contributors"}
 ]
-license = {text = "Apache-2.0"}
+license = {text = "MIT"}
 readme = "README.md"
 homepage = "https://gitlab.com/statwig-public/tb-amr"
 repository = "https://gitlab.com/statwig-public/tb-amr"
@@ -14,7 +14,7 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Healthcare Industry",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: Apache Software License",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",

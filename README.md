@@ -327,13 +327,13 @@ For contributions and development:
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The Apache License 2.0 is chosen for this healthcare research project because it:
+The MIT License is chosen for this healthcare research project because it:
 
-- Provides explicit patent protection for medical software users
+- Provides maximum freedom for use, modification, and distribution
 - Allows commercial use and integration by healthcare organizations
-- Protects contributors from patent litigation
+- Has minimal restrictions and is widely compatible
 - Encourages global collaboration in tuberculosis research
 
 This project is developed for global health research and clinical decision support in tuberculosis care.
