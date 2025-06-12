@@ -338,14 +338,63 @@ The MIT License is chosen for this healthcare research project because it:
 
 This project is developed for global health research and clinical decision support in tuberculosis care.
 
+## Ownership and Copyright
+
+**TB Antimicrobial Resistance (TB-AMR) Platform** is owned and maintained by:
+
+- **Copyright**: Copyright (c) 2025 TB Antimicrobial Resistance (TB-AMR) Project Contributors
+- **Primary Owner**: [Your Organization/Individual Name]
+- **Contact**: [your-email@example.com]
+
+### Evidence of Ownership
+
+This digital solution's ownership is documented through:
+
+1. **Source Code Repository**: Complete development history and commit logs
+2. **Copyright License**: MIT License with clear copyright attribution (see [LICENSE](LICENSE))
+3. **Contributors Documentation**: Detailed contributor information (see [CONTRIBUTORS.md](CONTRIBUTORS.md))
+4. **Terms of Service**: Legal ownership documentation (see [TERMS_OF_SERVICE.md](TERMS_OF_SERVICE.md))
+5. **Public Documentation**: Comprehensive project documentation and README
+
+### Evidence of Distribution Rights
+
+The right to reproduce and distribute all content is established through:
+
+1. **Contributor License Agreement**: All contributors grant reproduction/distribution rights (see [CONTRIBUTOR_LICENSE_AGREEMENT.md](CONTRIBUTOR_LICENSE_AGREEMENT.md))
+2. **Comprehensive Licensing Documentation**: Complete licensing framework (see [LICENSING_DOCUMENTATION.md](LICENSING_DOCUMENTATION.md))
+3. **Data Licensing**: Specific licensing for all datasets (see [DATA_LICENSING.md](DATA_LICENSING.md))
+4. **Third-Party License Compatibility**: All dependencies verified as compatible
+5. **Legal Declarations**: Formal certification of rights to reproduce and distribute
+
+### Digital Public Good Status
+
+This project is made available as a **Digital Public Good (DPG)** for global health benefit:
+
+- Open source under MIT License
+- Addresses UN Sustainable Development Goals (SDG 3: Good Health and Well-being)
+- Supports global tuberculosis resistance research and clinical decision-making
+- Promotes equitable access to TB treatment intelligence
+
+For DPG verification and ownership documentation, see:
+
+- **Repository**: <https://gitlab.com/statwig-public/tb-amr>
+- **Copyright Documentation**: [CONTRIBUTORS.md](CONTRIBUTORS.md)
+- **Legal Terms**: [TERMS_OF_SERVICE.md](TERMS_OF_SERVICE.md)
+- **Distribution Rights**: [LICENSING_DOCUMENTATION.md](LICENSING_DOCUMENTATION.md)
+- **Contributor Agreements**: [CONTRIBUTOR_LICENSE_AGREEMENT.md](CONTRIBUTOR_LICENSE_AGREEMENT.md)
+- **Data Licensing**: [DATA_LICENSING.md](DATA_LICENSING.md)
+
 ## Contact
 
-For technical support or collaboration inquiries:
+For technical support, ownership verification, or collaboration inquiries:
 
-- Technical Support: Contact your system administrator
-- Research Collaboration: Use the platform's collaboration features
-- Development: Refer to the developer documentation
+- **Ownership/Legal**: [legal-contact@example.com]
+- **Technical Support**: [tech-support@example.com]
+- **Research Collaboration**: [research@example.com]
+- **GitHub Issues**: <https://github.com/[your-username]/tb-amr/issues>
 
 ---
 
 _TB Resistance Hub - Enhancing global tuberculosis resistance intelligence through data-driven insights and collaborative research._
+
+**Copyright (c) 2025 TB Antimicrobial Resistance (TB-AMR) Project Contributors. Licensed under MIT License.**
