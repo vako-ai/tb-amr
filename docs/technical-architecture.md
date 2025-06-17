@@ -1,5 +1,19 @@
 # Technical Architecture Documentation
 
+## Table of Contents
+
+- [System Overview](#system-overview)
+- [Architecture Diagram](#architecture-diagram)
+- [Component Interaction Flow](#component-interaction-flow)
+- [Core Components](#core-components)
+- [Database Schema](#database-schema)
+- [Security Architecture](#security-architecture)
+- [Performance Optimization](#performance-optimization)
+- [Monitoring and Logging](#monitoring-and-logging)
+- [Integration Points](#integration-points)
+- [Development Guidelines](#development-guidelines)
+- [Future Architecture Considerations](#future-architecture-considerations)
+
 ## System Overview
 
 The TB Resistance Hub is built as a modern web application using a microservices-inspired architecture with clear separation of concerns across data, business logic, and presentation layers.
@@ -7,50 +21,115 @@ The TB Resistance Hub is built as a modern web application using a microservices
 ### Architecture Diagram
 
 ```mermaid
-┌─────────────────────────────────────────────────────────────┐
-│                    Presentation Layer                       │
-├─────────────────────────────────────────────────────────────┤
-│  Streamlit Frontend (app.py)                               │
-│  ├── Authentication Module (auth.py)                       │
-│  ├── Dashboard Components                                  │
-│  ├── Medical Search Interface                              │
-│  └── User Onboarding System                               │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    Business Logic Layer                     │
-├─────────────────────────────────────────────────────────────┤
-│  ├── Analytics Engine (analytics.py)                       │
-│  ├── Clinical Decision Support (decision_support.py)       │
-│  ├── Data Processing (data_processor.py)                   │
-│  ├── Medical Search Engine (medical_search.py)             │
-│  ├── Global Collaboration (global_collaboration.py)        │
-│  └── Utility Functions (utils.py)                          │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                     Data Access Layer                       │
-├─────────────────────────────────────────────────────────────┤
-│  Database Manager (db_manager.py)                          │
-│  ├── Connection Pool Management                            │
-│  ├── Query Abstraction                                     │
-│  ├── Transaction Management                                │
-│  └── Schema Migration Support                              │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      Data Storage Layer                     │
-├─────────────────────────────────────────────────────────────┤
-│  PostgreSQL Database                                        │
-│  ├── tb_cases (Patient and case data)                      │
-│  ├── users (Authentication and roles)                      │
-│  ├── user_preferences (Personalization)                    │
-│  ├── medical_terminology (Search terms)                    │
-│  └── collaboration_requests (Data sharing)                 │
-└─────────────────────────────────────────────────────────────┘
+graph TD
+    subgraph "Presentation Layer"
+        A[Streamlit Frontend<br/>app.py]
+        A1[Authentication Module<br/>auth.py]
+        A2[Dashboard Components]
+        A3[Medical Search Interface]
+        A4[User Onboarding System]
+        A --> A1
+        A --> A2
+        A --> A3
+        A --> A4
+    end
+
+    subgraph "Business Logic Layer"
+        B1[Analytics Engine<br/>analytics.py]
+        B2[Clinical Decision Support<br/>decision_support.py]
+        B3[Data Processing<br/>data_processor.py]
+        B4[Medical Search Engine<br/>medical_search.py]
+        B5[Global Collaboration<br/>global_collaboration.py]
+        B6[Utility Functions<br/>utils.py]
+    end
+
+    subgraph "Data Access Layer"
+        C[Database Manager<br/>db_manager.py]
+        C1[Connection Pool Management]
+        C2[Query Abstraction]
+        C3[Transaction Management]
+        C4[Schema Migration Support]
+        C --> C1
+        C --> C2
+        C --> C3
+        C --> C4
+    end
+
+    subgraph "Data Storage Layer"
+        D[PostgreSQL Database]
+        D1[tb_cases<br/>Patient and case data]
+        D2[users<br/>Authentication and roles]
+        D3[user_preferences<br/>Personalization]
+        D4[medical_terminology<br/>Search terms]
+        D5[collaboration_requests<br/>Data sharing]
+        D --> D1
+        D --> D2
+        D --> D3
+        D --> D4
+        D --> D5
+    end
+
+    A --> B1
+    A --> B2
+    A --> B3
+    A --> B4
+    A --> B5
+    A --> B6
+
+    B1 --> C
+    B2 --> C
+    B3 --> C
+    B4 --> C
+    B5 --> C
+    B6 --> C
+
+    C --> D
+```
+
+### Component Interaction Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend as Streamlit Frontend
+    participant Auth as Authentication
+    participant Analytics as Analytics Engine
+    participant Search as Medical Search
+    participant Decision as Decision Support
+    participant DB as Database Manager
+    participant PostgreSQL as Database
+
+    User->>Frontend: Access Application
+    Frontend->>Auth: Authenticate User
+    Auth->>DB: Verify Credentials
+    DB->>PostgreSQL: Query User Table
+    PostgreSQL-->>DB: User Data
+    DB-->>Auth: Authentication Result
+    Auth-->>Frontend: Login Status
+
+    User->>Frontend: Request Dashboard
+    Frontend->>Analytics: Get TB Statistics
+    Analytics->>DB: Query TB Cases
+    DB->>PostgreSQL: Execute Query
+    PostgreSQL-->>DB: Case Data
+    DB-->>Analytics: Processed Data
+    Analytics-->>Frontend: Charts & Metrics
+
+    User->>Frontend: Search Medical Terms
+    Frontend->>Search: Process Search Query
+    Search->>DB: Query Medical Terms
+    DB->>PostgreSQL: Search Database
+    PostgreSQL-->>DB: Matching Terms
+    DB-->>Search: Search Results
+    Search-->>Frontend: Formatted Results
+
+    User->>Frontend: Request Treatment Recommendation
+    Frontend->>Decision: Analyze Case Data
+    Decision->>DB: Get Resistance Patterns
+    DB->>PostgreSQL: Query Resistance Data
+    PostgreSQL-->>DB: Resistance Info
+    DB-->>Decision: Analysis Data
+    Decision-->>Frontend: Treatment Recommendations
 ```
 
 ## Core Components
@@ -284,6 +363,69 @@ CREATE TABLE user_preferences (
     preferred_pages TEXT[],
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
+
+### Database Schema Diagram
+
+```mermaid
+erDiagram
+    tb_cases {
+        int id PK
+        string patient_id UK
+        int age
+        string gender
+        string location
+        date diagnosis_date
+        string tb_type
+        text resistance_pattern
+        string treatment_outcome
+        boolean inh_resistant
+        boolean rif_resistant
+        boolean emb_resistant
+        boolean pza_resistant
+        timestamp created_at
+    }
+
+    users {
+        int id PK
+        string username UK
+        string password_hash
+        string role
+        timestamp created_at
+        timestamp last_login
+    }
+
+    user_preferences {
+        int id PK
+        int user_id FK
+        string role
+        text[] interests
+        string data_focus
+        string experience_level
+        text[] preferred_pages
+        timestamp created_at
+    }
+
+    medical_terminology {
+        int id PK
+        string category
+        string term
+        text definition
+        timestamp created_at
+    }
+
+    collaboration_requests {
+        int id PK
+        int requester_id FK
+        string request_type
+        text request_details
+        string status
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    users ||--o{ user_preferences : "has"
+    users ||--o{ collaboration_requests : "creates"
 ```
 
 ## Security Architecture
