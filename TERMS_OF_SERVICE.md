@@ -2,7 +2,7 @@
 
 ## Ownership and Copyright
 
-The TB Antimicrobial Resistance (TB-AMR) Platform ("the Software") is owned and operated by Sid Chakravarthy / Statwig ("Owner").
+The TB Antimicrobial Resistance (TB-AMR) Platform ("the Software") is owned and operated by Sid Chakravarthy / VakoAI ("Owner").
 
 **Copyright Notice**: Copyright (c) 2025 TB Antimicrobial Resistance (TB-AMR) Project Contributors. All rights reserved.
 

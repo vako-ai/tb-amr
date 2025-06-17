@@ -4,10 +4,10 @@
 
 **TB Antimicrobial Resistance (TB-AMR) Project** is owned and maintained by:
 
-- **Primary Owner**: Sid Chakravarthy / Statwig
+- **Primary Owner**: Sid Chakravarthy / VakoAI
 - **Contact Email**: <sid@vako.ai>
-- **Repository**: <https://gitlab.com/statwig-public/tb-amr>
-- **Organization**: Statwig
+- **Repository**: <https://github.com/vako-ai/tb-amr>
+- **Organization**: VakoAI
 
 ## Copyright Notice
 
@@ -19,8 +19,8 @@ This project is licensed under the MIT License, which allows for free use, modif
 
 ### Lead Developer(s)
 
-- **Statwig Team** - Lead Developers, Architecture, Development
-  - Organization: Statwig
+- **VakoAI Team** - Lead Developers, Architecture, Development
+- Organization: VakoAI
   - Role: Primary maintainers and copyright holders
 
 ### Additional Contributors
@@ -29,7 +29,7 @@ This project is licensed under the MIT License, which allows for free use, modif
 
 ## Institutional Affiliation
 
-- **Organization**: Statwig
+- **Organization**: VakoAI
 
 ## Ownership Documentation
 
@@ -45,7 +45,7 @@ This project's ownership is evidenced by:
 For ownership verification or collaboration inquiries:
 
 - **Email**: <sid@vako.ai>
-- **GitLab Issues**: <https://gitlab.com/statwig-public/tb-amr/-/issues>
+- **Issues**: <https://github.com/vako-ai/tb-amr/issues>
 
 ## Legal Declaration
 

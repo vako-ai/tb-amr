@@ -7,8 +7,8 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-homepage = "https://gitlab.com/statwig-public/tb-amr"
-repository = "https://gitlab.com/statwig-public/tb-amr"
+homepage = "https://github.com/vako-ai/tb-amr"
+repository = "https://github.com/vako-ai/tb-amr"
 keywords = ["tuberculosis", "antimicrobial-resistance", "healthcare", "clinical-decision-support"]
 classifiers = [
     "Development Status :: 4 - Beta",

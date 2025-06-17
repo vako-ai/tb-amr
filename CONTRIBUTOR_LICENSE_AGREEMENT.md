@@ -5,7 +5,7 @@
 **Version**: 1.0  
 **Effective Date**: June 6, 2025  
 **Project**: TB-AMR Platform  
-**Repository**: <https://gitlab.com/statwig-public/tb-amr>
+**Repository**: <https://github.com/vako-ai/tb-amr>
 
 ---
 
@@ -59,7 +59,7 @@ All Contributions will be licensed under the MIT License, consistent with the pr
 
 ### Organization Information (if applicable)
 
-**Organization**: Statwig  
+**Organization**: VakoAI  
 **Authorization**: I have authority to enter this agreement on behalf of my organization
 
 ---

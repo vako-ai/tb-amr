@@ -5,7 +5,7 @@
 **Project**: TB-AMR Platform  
 **Version**: 1.0  
 **Date**: June 6, 2025
-**Repository**: <https://gitlab.com/statwig-public/tb-amr>
+**Repository**: <https://github.com/vako-ai/tb-amr>
 
 ---
 

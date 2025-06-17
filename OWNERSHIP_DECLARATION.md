@@ -5,11 +5,11 @@
 **Date**: June 6, 2025  
 **Digital Solution**: TB Antimicrobial Resistance (TB-AMR) Platform  
 **Version**: 1.0  
-**Repository**: <https://gitlab.com/statwig-public/tb-amr>
+**Repository**: <https://github.com/vako-ai/tb-amr>
 
 ## Formal Declaration of Ownership
 
-I/We, Sid Chakravarthy / Statwig, hereby formally declare and certify that:
+I/We, Sid Chakravarthy / VakoAI, hereby formally declare and certify that:
 
 ### 1. Ownership Rights
 
@@ -39,7 +39,7 @@ I/We, Sid Chakravarthy / Statwig, hereby formally declare and certify that:
 
 **Organization:**
 
-- Organization: Statwig
+- Organization: VakoAI
 - Department: Technology / Global Health
 - Official Email: <sid@vako.ai>
 

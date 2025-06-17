@@ -377,7 +377,7 @@ This project is made available as a **Digital Public Good (DPG)** for global hea
 
 For DPG verification and ownership documentation, see:
 
-- **Repository**: <https://gitlab.com/statwig-public/tb-amr>
+- **Repository**: <https://github.com/vako-ai/tb-amr>
 - **Copyright Documentation**: [CONTRIBUTORS.md](CONTRIBUTORS.md)
 - **Legal Terms**: [TERMS_OF_SERVICE.md](TERMS_OF_SERVICE.md)
 - **Distribution Rights**: [LICENSING_DOCUMENTATION.md](LICENSING_DOCUMENTATION.md)
