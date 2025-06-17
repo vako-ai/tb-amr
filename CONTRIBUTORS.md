@@ -5,7 +5,7 @@
 **TB Antimicrobial Resistance (TB-AMR) Project** is owned and maintained by:
 
 - **Primary Owner**: Sid Chakravarthy / Statwig
-- **Contact Email**: <sidchaks@statwig.com>
+- **Contact Email**: <sid@vako.ai>
 - **Repository**: <https://gitlab.com/statwig-public/tb-amr>
 - **Organization**: Statwig
 
@@ -44,7 +44,7 @@ This project's ownership is evidenced by:
 
 For ownership verification or collaboration inquiries:
 
-- **Email**: <sidchaks@statwig.com>
+- **Email**: <sid@vako.ai>
 - **GitLab Issues**: <https://gitlab.com/statwig-public/tb-amr/-/issues>
 
 ## Legal Declaration

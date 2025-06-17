@@ -53,7 +53,7 @@ All Contributions will be licensed under the MIT License, consistent with the pr
 ## Contributor Information
 
 **Name**: Sid Chakravarthy  
-**Email**: <sidchaks@statwig.com>  
+**Email**: <sid@vako.ai>  
 **Date**: June 6, 2025  
 **Signature**: \***\*\*\*\*\*\*\***\_\***\*\*\*\*\*\*\***
 
@@ -91,4 +91,4 @@ This CLA is governed by the laws of India and ensures that:
 
 **Document Reference**: TB-AMR-CLA-2025  
 **Version Control**: Track all CLA versions and signatures  
-**Contact**: [legal-contact@example.com] for CLA-related inquiries
+**Contact**: [sid@vako.ai] for CLA-related inquiries

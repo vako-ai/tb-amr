@@ -344,7 +344,7 @@ This project is developed for global health research and clinical decision suppo
 
 - **Copyright**: Copyright (c) 2025 TB Antimicrobial Resistance (TB-AMR) Project Contributors
 - **Primary Owner**: [Your Organization/Individual Name]
-- **Contact**: [your-email@example.com]
+- **Contact**: [sid@vako.ai]
 
 ### Evidence of Ownership
 
@@ -388,9 +388,9 @@ For DPG verification and ownership documentation, see:
 
 For technical support, ownership verification, or collaboration inquiries:
 
-- **Ownership/Legal**: [legal-contact@example.com]
-- **Technical Support**: [tech-support@example.com]
-- **Research Collaboration**: [research@example.com]
+- **Ownership/Legal**: [sid@vako.ai]
+- **Technical Support**: [sid@vako.ai]
+- **Research Collaboration**: [sid@vako.ai]
 - **GitHub Issues**: <https://github.com/[your-username]/tb-amr/issues>
 
 ---

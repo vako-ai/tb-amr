@@ -217,9 +217,9 @@ I/We hereby certify that:
 
 ### Contact for Data Verification
 
-- **Data Licensing Contact**: [legal-contact@example.com]
-- **Technical Contact**: [tech-support@example.com]
-- **Research Contact**: [research@example.com]
+- **Data Licensing Contact**: [sid@vako.ai]
+- **Technical Contact**: [sid@vako.ai]
+- **Research Contact**: [sid@vako.ai]
 
 ---
 

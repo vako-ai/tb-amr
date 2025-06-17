@@ -57,7 +57,7 @@ For ownership verification, legal inquiries, or intellectual property matters:
 
 **Contact Information:**
 
-- Email: <sidchaks@statwig.com>
+- Email: <sid@vako.ai>
 
 ## Warranty Disclaimer
 

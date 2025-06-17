@@ -576,7 +576,7 @@ def show_help_modal():
             st.markdown("""
             For additional help:
             - Review the user guide in the Documentation section
-            - Contact technical support at support@tbresistancehub.org
+            - Contact technical support at sid@vako.ai
             - Join the monthly webinar for users (first Tuesday of each month)
             """)
             

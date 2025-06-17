@@ -35,13 +35,13 @@ I/We, Sid Chakravarthy / Statwig, hereby formally declare and certify that:
 **Primary Owner Contact:**
 
 - Name: Sid Chakravarthy
-- Email: <sidchaks@statwig.com>
+- Email: <sid@vako.ai>
 
 **Organization:**
 
 - Organization: Statwig
 - Department: Technology / Global Health
-- Official Email: <sidchaks@statwig.com>
+- Official Email: <sid@vako.ai>
 
 ### 5. Supporting Documentation
 
