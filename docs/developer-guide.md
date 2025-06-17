@@ -25,7 +25,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vako-ai/tb-amr
    cd tb-resistance-hub
    ```
 

@@ -391,7 +391,7 @@ For technical support, ownership verification, or collaboration inquiries:
 - **Ownership/Legal**: [sid@vako.ai]
 - **Technical Support**: [sid@vako.ai]
 - **Research Collaboration**: [sid@vako.ai]
-- **GitHub Issues**: <https://github.com/[your-username]/tb-amr/issues>
+- **GitHub Issues**: <https://github.com/vako-ai/tb-amr/issues>
 
 ---
 

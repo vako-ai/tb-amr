@@ -129,7 +129,7 @@ sudo systemctl restart postgresql
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/vako-ai/tb-amr
 cd tb-resistance-hub
 
 # Verify Python version
@@ -377,7 +377,7 @@ CMD ["streamlit", "run", "app.py", "--server.port", "5000", "--server.address", 
 
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/vako-ai/tb-amr
 cd tb-resistance-hub
 
 # Build and start services
@@ -436,7 +436,7 @@ sudo su - tbapp
 
 ```bash
 # Clone repository
-git clone <repository-url> /home/tbapp/tb-resistance-hub
+git clone https://github.com/vako-ai/tb-amr /home/tbapp/tb-resistance-hub
 cd /home/tbapp/tb-resistance-hub
 
 # Create virtual environment
