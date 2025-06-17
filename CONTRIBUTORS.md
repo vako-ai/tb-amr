@@ -58,6 +58,3 @@ I/We hereby declare that:
 5. The project is made available as a Digital Public Good for global health benefit
 
 ---
-
-_Last Updated: June 6, 2025_
-_For DPG Application Reference_

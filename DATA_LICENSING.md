@@ -237,8 +237,3 @@ I/We hereby certify that:
 **This documentation provides comprehensive evidence of the right to reproduce and distribute all data included in the TB-AMR collection.**
 
 ---
-
-**Document Reference**: TB-AMR-DATA-LICENSE-2025  
-**Approved for DPG Application**: Yes  
-**Legal Review**: [Date]  
-**Next Review**: [Date + 1 year]

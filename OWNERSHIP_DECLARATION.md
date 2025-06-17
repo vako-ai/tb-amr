@@ -75,11 +75,3 @@ I/We attest under penalty of perjury that the information provided in this decla
 **Organization Seal/Stamp** (if applicable):
 
 ---
-
-## For DPG Verification Use
-
-This document serves as formal evidence of ownership for Digital Public Goods application and certification processes.
-
-**Document Reference**: TB-AMR-OWNERSHIP-2025  
-**Last Updated**: June 6, 2025  
-**Next Review**: June 6, 2026

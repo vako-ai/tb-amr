@@ -9,12 +9,6 @@
 
 ---
 
-## Executive Summary
-
-This document provides comprehensive evidence of the legal right to reproduce and distribute all content, code, and data sets included in the TB-AMR project collection, in compliance with Digital Public Goods (DPG) requirements.
-
----
-
 ## 1. Source Code Licensing
 
 ### Primary License
@@ -231,8 +225,3 @@ This TB-AMR project has **comprehensive legal documentation** establishing the r
 **All content in this project can be freely reproduced and distributed** under the terms of the MIT License.
 
 ---
-
-**Document Reference**: TB-AMR-LICENSING-2025  
-**Last Updated**: June 6, 2025  
-**Review Date**: June 6, 2026
-**Legal Status**: Approved for DPG Application

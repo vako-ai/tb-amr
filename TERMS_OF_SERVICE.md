@@ -68,8 +68,3 @@ This software is provided "as is" without warranty of any kind. The Owner discla
 These terms are governed by the laws of India without regard to conflict of law principles.
 
 ---
-
-**Effective Date**: June 6, 2025
-**Last Updated**: June 6, 2025
-
-_This Terms of Service document serves as evidence of ownership for Digital Public Goods application and legal compliance._
